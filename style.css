@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 5px;
+
+  }
+  
+  main {
+    padding: 20px;
+   
+  }
+  
+  .lab-report {
+    margin: 10px;
+    width: auto;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  .lab-report:hover{
+    background-color: #e0e0e0;
+    border-color: #999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+  .lab-reportactive{
+    margin: 10px;
+    width: auto;
+    background-color: #f0f0f0;
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 255, 115);
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+
+  .foto{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    
+  }
+
+  .fotosait{
+    width: 1200px;
+  }
+
+  .head2{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text1{
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .student{
+    width: 700px;
+  }
+
+  .fotoblock{
+    width: 100px;
+  }
+
+  .space{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .blocklab{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .button1{
+    
+    background-color: #1100fcb6;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 3px;
+    width: 300px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+
+  .button2{
+    
+    background-color: #1100fcb6;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 3px;
+    width: 250px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .buttoncont{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
+  .buttonactive{
+   
+    background-color: #1100fc10;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 3px;
+    width: 300px;
+    text-align: center;
+  }
+
+  .buttonactive2{
+    background-color: #1100fc10;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 3px;
+    width: 250px;
+    text-align: center;
+  }
+
+  .info{
+    background-color: #1100fc10;
+    border-radius: 10px;
+    border-style: double;
+    border-color: #3333337a;
+    padding: 10px;
+    margin-left: 5%;
+    width: 1200px;
+  }
+
+  
+  .infocontent{
+    display: flex;
+    width: 85%; 
+    margin: 0 auto;
+    
+  }
+   
+
+  a {
+    color: black;
+    text-decoration: none;
+    
+  }
+
+  h5{
+    text-decoration: underline;
+  }
+ 
+  
+  
