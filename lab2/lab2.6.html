@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Звіт з лабораторних робіт</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div>
+          <h1 class="text1">Звіти з лабораторних робіт</h1>
+          <h2 class="text1">З дисципліни "Програмування інтернет-застосуввань"</h2>
+        </div>
+        <div class="head2">
+            <div class="space">
+          <div class="student">
+            <h2>Студент: Вашкулат Денис Олександрович</h2>
+            <h2>Група: ІПЗ-21-301</h2>
+          </div>
+          <div class="fotoblock">
+            <img src="../image/foto (2).jpg" alt="" class="foto">
+        </div>
+          </div>
+        </div>
+      </header>
+      
+  <main>
+    <div class="blocklab">
+      <a href="/lab1/lab1.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №1</p>
+        </div>
+      </a>
+      <a href="/lab2/lab2.html"
+        ><div class="lab-reportactive">
+          <p>Лабораторна робота №2</p>
+        </div>
+      </a>
+
+      <a href="lab3.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №3</p>
+        </div>
+      </a>
+
+      <a href="lab4.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №4</p>
+        </div>
+      </a>
+
+      <a href="lab5.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №5</p>
+        </div>
+      </a>
+
+      <a href="lab6.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №6</p>
+        </div>
+      </a>
+
+      <a href="lab7.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №7</p>
+        </div>
+      </a>
+
+      <a href="lab8.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №8</p>
+        </div>
+      </a>
+
+      <a href="lab9.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №9</p>
+        </div>
+      </a>
+    </div>
+
+<div class="infocontent">
+<div class="buttoncont">
+    <a href="/lab2/lab2.html"><div class="button1"><h3>Тема, мета ЛР№2 Місце розташування сайту, звіту</h3></div></a>
+    <a href="/lab2/lab2.1.html"><div class="button1"><h3>Способи підключення стилів</h3></div></a>
+    
+    <a href="/lab2/lab2.2.html"><div class="button1"><h3>Селектори</h3></div></a>
+
+    <a href="/lab2/lab2.3.html"><div class="button2"><h3>Селектори тегу</h3></div></a>
+    <a href="/lab2/lab2.4.html"><div class="button2"><h3>Селектори класу</h3></div></a>
+    <a href="/lab2/lab2.5.html"><div class="button2"><h3>Селектори ідентифікаторів</h3></div></a>
+    <a href="/lab2/lab2.6.html"><div class="buttonactive2"><h3>Інші селектори</h3></div></a>
+
+    <a href="/lab2/lab2.7.html"><div class="button1"><h3>CSS: Шрифти Текст Таблиці Фон Контур Списки CSS Просунутий</h3></div></a>
+    <a href="/lab2/lab2.8.html"><div class="button1"><h3>Висновки до ЛР№2</h3></div></a>
+</div>
+<div class="infocont">
+    <div class="info">
+    <h2>Крім селекторів тегу, класу та ідентифікатора, у CSS є багато інших видів селекторів, які ви можете використовувати для більш точного або специфічного стилізування елементів HTML. Ось деякі з них:</h2>
+
+    <pre>
+<h4>
+  1. Селектори атрибутів:
+     Селектори, які вибирають елементи на основі їхніх атрибутів.
+     Приклади:
+</h4>
+      /* Елементи з атрибутом type="text" */
+input[type="text"] {
+    border: 1px solid #ccc;
+}
+
+/* Елементи з атрибутом title, який містить "example" */
+a[title*="example"] {
+    color: red;
+}
+
+<h4>
+  2. Псевдокласи:
+     Псевдокласи використовуються для вибору елементів у певному стані, наприклад, коли користувач наводить мишку або активує елемент.
+     Приклади:
+</h4>
+ /* Посилання, коли на них наводиться мишка */
+a:hover {
+    color: blue;
+}
+
+/* Елементи форми, які мають фокус */
+input:focus {
+    outline: none;
+}
+<h4>
+  3. Псевдоелементи:
+     Псевдоелементи дозволяють стилізувати частини елементів.
+     Приклади:
+</h4>
+/* Додає контент перед елементом */
+p::before {
+    content: "• ";
+}
+
+/* Зміна стилю першої літери елемента */
+p::first-letter {
+    font-size: 2em;
+    color: blue;
+}
+
+<h4>
+  4. Групування селекторів:
+     Ви можете групувати кілька селекторів для застосування однакових стилів до різних елементів.
+     Приклад:
+</h4>
+/* Застосовує один і той же стиль до h1, h2, та h3 */
+h1, h2, h3 {
+    color: green;
+}
+
+<h4>
+  5. Комбіновані селектори:
+     Комбіновані селектори дозволяють вибирати елементи, які знаходяться в певному відношенні до інших елементів.
+     Приклади:
+</h4>
+
+/* Дочірні елементи ul, що є li */
+ul > li {
+    color: red;
+}
+
+/* Елементи li, які слідують за іншими li */
+li + li {
+    margin-top: 10px;
+}
+
+<h4>
+  6. Універсальні селектори:
+     Селектор * вибирає всі елементи на сторінці.
+     Приклад:
+</h4>
+/* Застосовує рамку до всіх елементів */
+* {
+    border: 1px solid #000;
+}
+
+
+
+    </pre>
+    
+    </div>
+</div>
+</div>
+   
+    
+   
+    
+    
+    
+  
+    
+    
+      
+      
+    </main>
+  <footer>
+    <p>&copy; 2023 Всі права захищені.</p>
+  </footer>
+</body>
+</html>

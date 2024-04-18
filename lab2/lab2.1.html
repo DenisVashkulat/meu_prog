@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Звіт з лабораторних робіт</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div>
+          <h1 class="text1">Звіти з лабораторних робіт</h1>
+          <h2 class="text1">З дисципліни "Програмування інтернет-застосуввань"</h2>
+        </div>
+        <div class="head2">
+            <div class="space">
+          <div class="student">
+            <h2>Студент: Вашкулат Денис Олександрович</h2>
+            <h2>Група: ІПЗ-21-301</h2>
+          </div>
+          <div class="fotoblock">
+            <img src="../image/foto (2).jpg" alt="" class="foto">
+        </div>
+          </div>
+        </div>
+      </header>
+      
+  <main>
+    <div class="blocklab">
+      <a href="/lab1/lab1.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №1</p>
+        </div>
+      </a>
+      <a href="/lab2/lab2.html"
+        ><div class="lab-reportactive">
+          <p>Лабораторна робота №2</p>
+        </div>
+      </a>
+
+      <a href="lab3.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №3</p>
+        </div>
+      </a>
+
+      <a href="lab4.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №4</p>
+        </div>
+      </a>
+
+      <a href="lab5.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №5</p>
+        </div>
+      </a>
+
+      <a href="lab6.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №6</p>
+        </div>
+      </a>
+
+      <a href="lab7.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №7</p>
+        </div>
+      </a>
+
+      <a href="lab8.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №8</p>
+        </div>
+      </a>
+
+      <a href="lab9.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №9</p>
+        </div>
+      </a>
+    </div>
+
+<div class="infocontent">
+<div class="buttoncont">
+    <a href="/lab2/lab2.html"><div class="button1"><h3>Тема, мета ЛР№2 Місце розташування сайту, звіту</h3></div></a>
+    <a href="/lab2/lab2.1.html"><div class="buttonactive"><h3>Способи підключення стилів</h3></div></a>
+    
+    <a href="/lab2/lab2.2.html"><div class="button1"><h3>Селектори</h3></div></a>
+
+    <a href="/lab2/lab2.3.html"><div class="button2"><h3>Селектори тегу</h3></div></a>
+    <a href="/lab2/lab2.4.html"><div class="button2"><h3>Селектори класу</h3></div></a>
+    <a href="/lab2/lab2.5.html"><div class="button2"><h3>Селектори ідентифікаторів</h3></div></a>
+    <a href="/lab2/lab2.6.html"><div class="button2"><h3>Інші селектори</h3></div></a>
+
+    <a href="/lab2/lab2.7.html"><div class="button1"><h3>CSS: Шрифти Текст Таблиці Фон Контур Списки CSS Просунутий</h3></div></a>
+    <a href="/lab2/lab2.8.html"><div class="button1"><h3>Висновки до ЛР№2</h3></div></a>
+</div>
+<div class="infocont">
+    <div class="info">
+      <p>1. Вбудований стиль (Inline CSS):
+        Ви можете застосувати стилі безпосередньо до елементів HTML, використовуючи атрибут style.</p>
+        <pre>Наприклад: 
+
+<code> &lt;div style="color: red;">Текст&lt;/div&gt;</code>
+        </pre>
+        <p>Це підходить для стилізації окремих елементів, але не є оптимальним способом для стилізації всієї сторінки.</p>
+        <p>2. Вбудований блок стилів (Internal CSS):
+          Ви можете додати стилі безпосередньо в документ HTML у блоці &lt;style&gt;, розміщеному в розділі &lt;head&gt;.
+          </p>
+<pre>Наприклад:
+  <code>
+  &lt;head&gt;
+  &lt;style&gt;
+        body {
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: blue;
+        }
+  &lt;/style&gt;
+  &lt;/head&gt;
+      </code>
+
+</pre>
+
+<p>Цей підхід підходить для невеликих проектів або для стилізації окремої сторінки.</p>
+
+<p>
+  3. Зовнішній файл стилів (External CSS):
+</p>
+<p>
+  Стилі зберігаються в окремому файлі з розширенням .css і підключаються до HTML-сторінки за допомогою тегу &lt;link&gt;.
+</p>
+<pre>Наприклад:
+  <code>
+    &lt;head&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+    &lt;/head&gt;
+</code>
+</pre>
+    <p>Це найбільш поширений і кращий спосіб для підключення стилів, оскільки дозволяє розділити структуру (HTML) і стилі (CSS) та спростити обслуговування та оновлення стилів.</p>
+
+    <p>4. Імпорт стилів (Importing Styles):</p>
+    <p>Ви можете імпортувати зовнішній файл стилів в інший файл стилів за допомогою директиви @import.</p>
+    <pre>Наприклад: 
+      <code>
+        @import url("styles.css");
+      </code></pre>
+      <p>Це дозволяє організувати стилі в кілька файлів, що може спростити їх обслуговування.</p>
+    </div>
+</div>
+
+   
+    
+   
+    
+    
+    
+  
+    
+    
+      
+      
+    </main>
+  <footer>
+    <p>&copy; 2023 Всі права захищені.</p>
+  </footer>
+</body>
+</html>
