@@ -98,22 +98,1036 @@
 </div>
 <div class="infocont">
     <div class="info">
-      <h4>Тема: СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ.
-        РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ в
-        HTML-ДОКУМЕНТІ.</h4>
-        <p>Мета: придбати практичні навички роботи з HTML-документом, таблицями, ,
-          зображеннями, посиланнями, списками, формами
-          Створити шаблон звітного HTML-документом для відображення
-          результатів роботи всіх лабораторних робіт.</p>
-          <h4>Посилання на виконані завдання:</h4>
-          <a href="https://denisvashkulat.github.io/meu_web/" target="_blank"><h5>&#8226; Власний веб-додаток</h5></a>
-          <a href="https://denisvashkulat.github.io/meu_SR/" target="_blank"><h5>&#8226; Самостійна робота</h5></a>
-          <a href="https://denisvashkulat.github.io/meu_resume/" target="_blank"><h5>&#8226; Резюме</h5></a>
-          <a href="https://www.figma.com/file/LqJZykJCfgSUoOHAlKCcj3/%D0%A2%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD?type=design&node-id=0-1&mode=design" target="_blank"><h5>&#8226; Дизайн мобільного застосунка</h5></a>
-          <a href="https://www.figma.com/file/LqJZykJCfgSUoOHAlKCcj3/%D0%A2%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD?type=design&node-id=2-229&mode=design" target="_blank"><h5>&#8226; Дизайн постера</h5></a>
-          <a href="https://www.figma.com/file/LqJZykJCfgSUoOHAlKCcj3/%D0%A2%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD?type=design&node-id=2-258&mode=design" target="_blank"><h5>&#8226; Дизайн резюме</h5></a>
-          <a href="https://github.com/DenisVashkulat" target="_blank"><h5>&#8226; GitHub</h5></a>
-    
+      <h2>Самостійна робота 2</h2>
+      <fieldset>
+        <legend>2.1. Заокруглені кути.</legend>
+        <fieldset>
+          <style> 
+            #rcorners1 {
+              border-radius: 25px;
+              background: #73AD21;
+              padding: 20px; 
+              width: 200px;
+              height: 150px;  
+            }
+            
+            #rcorners2 {
+              border-radius: 25px;
+              border: 2px solid #73AD21;
+              padding: 20px; 
+              width: 200px;
+              height: 150px;  
+            }
+            
+            #rcorners3 {
+              border-radius: 25px;
+              background: url(/img/foto.jpg);
+              background-position: left top;
+              background-repeat: repeat;
+              padding: 20px; 
+              width: 200px;
+              height: 150px;  
+            }
+            </style>
+           
+            
+            <h1>The border-radius Property</h1>
+            
+            <p>Rounded corners for an element with a specified background color:</p>
+            <p id="rcorners1">Rounded corners!</p>
+            <p>Rounded corners for an element with a border:</p>
+            <p id="rcorners2">Rounded corners!</p>
+            <p>Rounded corners for an element with a background image:</p>
+            <p id="rcorners3">Rounded corners!</p>
+        </fieldset>
+        <fieldset>
+          <style> 
+            #rcorners11 {
+              border-radius: 15px 50px 30px 5px;
+              background: #73AD21;
+              padding: 20px; 
+              width: 200px;
+              height: 150px; 
+            }
+            
+            #rcorners22 {
+              border-radius: 15px 50px 30px;
+              background: #73AD21;
+              padding: 20px; 
+              width: 200px;
+              height: 150px; 
+            }
+            
+            #rcorners33{
+              border-radius: 15px 50px;
+              background: #73AD21;
+              padding: 20px; 
+              width: 200px;
+              height: 150px; 
+            } 
+            
+            #rcorners44 {
+              border-radius: 15px;
+              background: #73AD21;
+              padding: 20px; 
+              width: 200px;
+              height: 150px; 
+            } 
+            </style>
+            </head>
+            <body>
+            
+            <h1>The border-radius Property</h1>
+            
+            <p>Four values - border-radius: 15px 50px 30px 5px:</p>
+            <p id="rcorners11"></p>
+            
+            <p>Three values - border-radius: 15px 50px 30px:</p>
+            <p id="rcorners22"></p>
+            
+            <p>Two values - border-radius: 15px 50px:</p>
+            <p id="rcorners33"></p>
+            
+            <p>One value - border-radius: 15px:</p>
+            <p id="rcorners44"></p>
+            
+        </fieldset>
+        <fieldset>
+          <style> 
+            #rcorners111 {
+              border-radius: 50px / 15px;
+              background: #73AD21;
+              padding: 20px; 
+              width: 200px;
+              height: 150px; 
+            }
+            
+            #rcorners222 {
+              border-radius: 15px / 50px;
+              background: #73AD21;
+              padding: 20px; 
+              width: 200px;
+              height: 150px; 
+            }
+            
+            #rcorners333 {
+              border-radius: 50%;
+              background: #73AD21;
+              padding: 20px; 
+              width: 200px;
+              height: 150px;
+            } 
+            </style>
+            </head>
+            <body>
+            
+            <h1>The border-radius Property</h1>
+            
+            <p>Elliptical border - border-radius: 50px / 15px:</p>
+            <p id="rcorners111"></p>
+            
+            <p>Elliptical border - border-radius: 15px / 50px:</p>
+            <p id="rcorners222"></p>
+            
+            <p>Ellipse border - border-radius: 50%:</p>
+            <p id="rcorners333"></p>
+            
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>2.2. CSS анімації.</legend>
+        <fieldset>
+          <style> 
+            #div_1 {
+              width: 100px;
+              height: 100px;
+              background-color: red;
+              animation-name: example;
+              animation-duration: 4s;
+            }
+            
+            @keyframes example {
+              from {background-color: red;}
+              to {background-color: yellow;}
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h1>CSS Animation</h1>
+            
+            <div id="div_1"></div>
+            
+            <p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+            
+        </fieldset>
+        <fieldset>
+          <style>
+          #div_2 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: example;
+            animation-duration: 4s;
+          }
+          
+          @keyframes example {
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:200px; top:0px;}
+            50%  {background-color:blue; left:200px; top:200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:red; left:0px; top:0px;}
+          }
+          </style>
+          </head>
+          <body>
+          
+          <h1>CSS Animation</h1>
+          
+          <div id="div_2"></div>
+          
+          <p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+        </fieldset>
+        <fieldset>
+          <style> 
+            #div_3 {
+              width: 100px;
+              height: 100px;
+              background-color: red;
+              position: relative;
+              animation-name: example;
+              animation-duration: 4s;
+              animation-iteration-count: 3;
+            }
+            
+            @keyframes example {
+              0%   {background-color:red; left:0px; top:0px;}
+              25%  {background-color:yellow; left:200px; top:0px;}
+              50%  {background-color:blue; left:200px; top:200px;}
+              75%  {background-color:green; left:0px; top:200px;}
+              100% {background-color:red; left:0px; top:0px;}
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h1>CSS Animation</h1>
+            
+            <p>The animation-iteration-count property specifies the number of times an animation should run. The following example will run the animation 3 times before it stops:</p>
+        <div id="div_3"></div>
+          </fieldset>
+          <fieldset>
+            <style> 
+              
+              
+              #div11 {animation-timing-function: linear;}
+              #div22 {animation-timing-function: ease;}
+              #div33 {animation-timing-function: ease-in;}
+              #div44 {animation-timing-function: ease-out;}
+              #div55 {animation-timing-function: ease-in-out;}
+              
+              @keyframes mymove {
+                from {left: 0px;}
+                to {left: 300px;}
+              }
+              </style>
+              </head>
+              <body>
+              
+              <h1>CSS Animation</h1>
+              
+              <p>The animation-timing-function property specifies the speed curve of the animation. The following example shows some of the different speed curves that can be used:</p>
+              
+              <div id="div11">linear</div>
+              <div id="div22">ease</div>
+              <div id="div33">ease-in</div>
+              <div id="div44">ease-out</div>
+              <div id="div55">ease-in-out</div>
+              
+          </fieldset>
+          <fieldset>
+            <style> 
+              #div_6 {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                position: relative;
+                animation-name: example;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-delay: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+              }
+              
+              @keyframes example {
+                0%   {background-color:red; left:0px; top:0px;}
+                25%  {background-color:yellow; left:200px; top:0px;}
+                50%  {background-color:blue; left:200px; top:200px;}
+                75%  {background-color:green; left:0px; top:200px;}
+                100% {background-color:red; left:0px; top:0px;}
+              }
+              </style>
+              </head>
+              <body>
+              
+              <h1>CSS Animation</h1>
+              
+              <p>This example uses six of the animation properties:</p>
+              <div id="div_6"></div>
+          </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>2.3. Підказки CSS.</legend>
+        <fieldset>
+          <style>
+            .tooltip {
+              position: relative;
+              display: inline-block;
+              border-bottom: 1px dotted black;
+            }
+            
+            .tooltip .tooltiptext {
+              visibility: hidden;
+              width: 120px;
+              background-color: black;
+              color: #fff;
+              text-align: center;
+              border-radius: 6px;
+              padding: 5px 0;
+              
+              /* Position the tooltip */
+              position: absolute;
+              z-index: 1;
+              top: -5px;
+              left: 105%;
+            }
+            
+            .tooltip:hover .tooltiptext {
+              visibility: visible;
+            }
+            </style>
+            <body style="text-align:center;">
+            
+            <h2>Right Tooltip</h2>
+            <p>Move the mouse over the text below:</p>
+            
+            <div class="tooltip">Hover over me
+              <span class="tooltiptext">Tooltip text</span>
+            </div>
+        </fieldset>
+       
+        
+      </fieldset>
+      <fieldset>
+        <legend>2.4. Кнопки CSS.</legend>
+        <fieldset>
+          <style>
+            .buttonsr {
+              background-color: #04AA6D;
+              border: none;
+              color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h2>CSS Buttons</h2>
+            
+            <button>Default Button</button>
+            <a href="#" class="buttonsr">Link Button</a>
+            <button class="buttonsr">Button</button>
+            <input type="buttonsr" class="buttonsr" value="Input Button">
+        </fieldset>
+        <fieldset>
+          <style>
+            .button1sr {
+              background-color: #04AA6D; /* Green */
+              border: none;
+              color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
+            
+            .button2sr {background-color: #008CBA;} /* Blue */
+            .button3sr {background-color: #f44336;} /* Red */ 
+            .button4sr {background-color: #e7e7e7; color: black;} /* Gray */ 
+            .button5sr {background-color: #555555;} /* Black */
+            </style>
+            </head>
+            <body>
+            
+            <h2>Button Colors</h2>
+            
+            <p>Change the background color of a button with the background-color property:</p>
+            
+            <button class="button1sr">Green</button>
+            <button class="button1sr button2sr">Blue</button>
+            <button class="button1sr button3sr">Red</button>
+            <button class="button1sr button4sr">Gray</button>
+            <button class="button1sr button5sr">Black</button>
+        </fieldset>
+        <fieldset>
+          <style>
+            .button11sr {
+              background-color: #04AA6D; /* Green */
+              border: none;
+              color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
+            
+            .button111sr {font-size: 10px;}
+            .button22sr {font-size: 12px;}
+            .button33sr {font-size: 16px;}
+            .button44sr {font-size: 20px;}
+            .button55sr {font-size: 24px;}
+            </style>
+            </head>
+            <body>
+            
+            <h2>Button Sizes</h2>
+            
+            <p>Change the font size of a button with the font-size property:</p>
+            
+            <button class="button11sr button111sr">10px</button>
+            <button class="button11sr button22sr">12px</button>
+            <button class="button11sr button33sr">16px</button>
+            <button class="button11sr button44sr">20px</button>
+            <button class="button11sr button55sr">24px</button>
+        </fieldset>
+        <fieldset>
+          <style>
+            .buttonssr {
+              background-color: #04AA6D; /* Green */
+              border: none;
+              color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+              -webkit-transition-duration: 0.4s; /* Safari */
+              transition-duration: 0.4s;
+            }
+            
+            .button1ssr {
+              box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            }
+            
+            .button2ssr:hover {
+              box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h2>Shadow Buttons</h2>
+            
+            <p>Use the box-shadow property to add shadows to the button:</p>
+            
+            <button class="buttonssr button1ssr">Shadow Button</button>
+            <button class="buttonssr button2ssr">Shadow on Hover</button>
+        </fieldset>
+        <fieldset>
+          <style>
+            .buttonwsr {
+              background-color: #04AA6D; /* Green */
+              border: none;
+              color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
+            
+            .button1wsr {width: 250px;}
+            .button2wsr {width: 50%;}
+            .button3wsr {width: 100%;}
+            </style>
+            </head>
+            <body>
+            
+            <h2>Set Button Widths</h2>
+            
+            <p>Use the width property to change the width of the button:</p>
+            
+            <button class="buttonwsr button1wsr">250px</button><br>
+            <button class="buttonwsr button2wsr">50%</button><br>
+            <button class="buttonwsr button3wsr">100%</button>
+            
+            <p><strong>Tip:</strong> Use pixels if you want to set a fixed width and use percent for responsive buttons (e.g. 50% of its parent element). Resize the browser window to see the effect.</p>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>2.5.  CSS Пагінація.</legend>
+        <fieldset>
+          <style>
+            .pagination {
+              display: inline-block;
+            }
+            
+            .pagination a {
+              color: black;
+              float: left;
+              padding: 8px 16px;
+              text-decoration: none;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h2>Simple Pagination</h2>
+            
+            <div class="pagination">
+              <a href="#">&laquo;</a>
+              <a href="#">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#">&raquo;</a>
+            </div>
+        </fieldset>
+        <fieldset>
+          <style>
+            .pagination {
+              display: inline-block;
+            }
+            
+            .pagination a {
+              color: black;
+              float: left;
+              padding: 8px 16px;
+              text-decoration: none;
+            }
+            
+            .pagination a.active {
+              background-color: #4CAF50;
+              color: white;
+              border-radius: 5px;
+            }
+            
+            .pagination a:hover:not(.active) {
+              background-color: #ddd;
+              border-radius: 5px;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h2>Rounded Active and Hover Buttons</h2>
+            
+            <div class="pagination">
+              <a href="#">&laquo;</a>
+              <a href="#">1</a>
+              <a href="#" class="active">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#">&raquo;</a>
+            </div>
+        </fieldset>
+        <fieldset>
+          <style>
+            ul.breadcrumb {
+              padding: 8px 16px;
+              list-style: none;
+              background-color: #eee;
+            }
+            
+            ul.breadcrumb li {display: inline;}
+            
+            ul.breadcrumb li+li:before {
+              padding: 8px;
+              color: black;
+              content: "/\00a0";
+            }
+            
+            ul.breadcrumb li a {color: green;}
+            </style>
+            </head>
+            <body>
+            
+            <h2>Breadcrumb Pagination</h2>
+            
+            <ul class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Pictures</a></li>
+              <li><a href="#">Summer 15</a></li>
+              <li>Italy</li>
+            </ul>
+            
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>2.6. Створення стовпців CSS.</legend>
+        <fieldset>
+          <style>
+            .newspaper {
+              column-count: 3;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h1>Create Multiple Columns</h1>
+            
+            <div class="newspaper">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+            </div>
+        </fieldset>
+        <fieldset>
+          <style> 
+            .newspapers {
+              column-count: 3;
+              column-gap: 40px;
+              column-rule: 1px solid lightblue;
+            }
+            
+            h2 {
+              column-span: all;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <div class="newspapers">
+            <h2>Lorem Ipsum Dolor Sit Amet</h2>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+            </div>
+            
+        </fieldset>
+        <fieldset>
+          <style> 
+            .newspaperss {
+              column-width: 100px;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h1>Specify The Column Width</h1>
+            
+            <div class="newspaperss">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+            </div>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>2.7. Випадаючі списки CSS.</legend>
+        <fieldset>
+          <style>
+            ul.mu {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #333;
+            }
+            
+            li.ml {
+              float: left;
+            }
+            
+            li.ml a, .dropbtn {
+              display: inline-block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            
+            li.ml a:hover, .dropdown:hover .dropbtn {
+              background-color: red;
+            }
+            
+            li.dropdown {
+              display: inline-block;
+            }
+            
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #f9f9f9;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+            
+            .dropdown-content a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+              text-align: left;
+            }
+            
+            .dropdown-content a:hover {background-color: #f1f1f1;}
+            
+            .dropdown:hover .dropdown-content {
+              display: block;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <ul class="mu">
+              <li class="ml"><a href="#home">Home</a></li>
+              <li class="ml"><a href="#news">News</a></li>
+              <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </li>
+            </ul>
+            
+            <h3>Dropdown Menu inside a Navigation Bar</h3>
+            <p>Hover over the "Dropdown" link to see the dropdown menu.</p>
+             
+        </fieldset>
+        <fieldset>
+          <style>
+            .dropbtn1 {
+              background-color: #4CAF50;
+              color: white;
+              padding: 16px;
+              font-size: 16px;
+              border: none;
+              cursor: pointer;
+            }
+            
+            .dropdown1 {
+              position: relative;
+              display: inline-block;
+            }
+            
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              right: 0;
+              background-color: #f9f9f9;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+            
+            .dropdown-content a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+            }
+            
+            .dropdown-content a:hover {background-color: #f1f1f1;}
+            
+            .dropdown1:hover .dropdown-content {
+              display: block;
+            }
+            
+            .dropdown1:hover .dropbtn1 {
+              background-color: #3e8e41;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h2>Aligned Dropdown Content</h2>
+            <p>Determine whether the dropdown content should go from left to right or right to left with the left and right properties.</p>
+            
+            <div class="dropdown1" style="float:left;">
+              <button class="dropbtn1">Left</button>
+              <div class="dropdown-content" style="left:0;">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+              </div>
+            </div>
+            
+            <div class="dropdown1" style="float:right;">
+              <button class="dropbtn1">Right</button>
+              <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+              </div>
+            </div>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>2.8. Кольорові ключові слова CSS.</legend>
+        <fieldset>
+          <style>
+            #tts {
+              color: blue;
+              border: 10px solid currentcolor;
+              padding: 15px;  
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h2>The currentcolor Keyword</h2>
+            
+            <p>The currentcolor keyword refers to the current value of the color property of an element.</p>
+            
+            <div id="tts">
+            This div element has a blue text color and a blue border.
+            </div>
+            
+        </fieldset>
+        <fieldset>
+          <style>
+            #ser {
+              border: 2px solid red;
+            }
+            
+            #sor {
+              border: inherit;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h2>The inherit Keyword</h2>
+            
+            <div id="ser">Here, the <span id="sor">span element's</span> border settings will be inherited from the parent element.</div>
+            <br>
+            
+            <div id="ser" style="border:2px dotted blue;">Here, the <span id="sor">span element's</span> border settings will also be inherited from the parent element.</div>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>2.9. Тіньові ефекти CSS.</legend>
+        <fieldset>
+          <style>
+            #shadow {
+              color: white;
+              text-shadow: 2px 2px 4px #000000;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h1 id="shadow">Text-shadow effect!</h1>
+        </fieldset>
+        <fieldset>
+          <style>
+            #shadowred {
+              text-shadow: 0 0 3px #FF0000;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h1 id="shadowred">Text-shadow with red neon glow!</h1>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>2.10. CSS Box Shadow.</legend>
+        <fieldset>
+          <style> 
+            #boxshadow {
+              width: 300px;
+              height: 100px;
+              padding: 15px;
+              background-color: coral;
+              box-shadow: 10px 10px;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h1>The box-shadow Property</h1>
+            
+            <div id="boxshadow">This is a div element with a box-shadow</div>
+        </fieldset>
+        <fieldset>
+          <style> 
+            #example1 {
+              border: 1px solid;
+              padding: 10px;
+              box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+              margin: 20px;
+            }
+            
+            #example2 {
+              border: 1px solid;
+              padding: 10px;
+              box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+              margin: 20px;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h1>Multiple Shadows</h1>
+            
+            <div id="example1">
+              <h2>Multiple shadows</h2>
+              <p>box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green:</p>
+            </div>
+            <br>
+            
+            <div id="example2">
+              <h2>Multiple shadows with blur effect</h2>
+              <p>box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green:</p>
+            </div>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>2.11. Переходи CSS.</legend>
+        <fieldset>
+          <style> 
+            div.g {
+              width: 100px;
+              height: 100px;
+              background: red;
+              transition: width 2s, height 4s;
+            }
+            
+            div.g:hover {
+              width: 300px;
+              height: 300px;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h1>The transition Property</h1>
+            
+            <p>Hover over the div element below, to see the transition effect:</p>
+            
+            <div class="g"></div>
+        </fieldset>
+        <fieldset>
+          <style> 
+            div.ggg {
+              width: 100px;
+              height: 100px;
+              background: red;
+              transition: width 2s, height 2s, transform 2s;
+            }
+            
+            div.ggg:hover {
+              width: 300px;
+              height: 300px;
+              transform: rotate(180deg);
+            }
+            </style>
+           
+            
+            <h1>Transition + Transform</h1>
+            
+            <p>Hover over the div element below:</p>
+            <div class="ggg"></div>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>2.12. Текстові ефекти CSS.</legend>
+        <fieldset>
+          <style> 
+            p.test1 {
+              white-space: nowrap; 
+              width: 200px; 
+              border: 1px solid #000000;
+              overflow: hidden;
+              text-overflow: clip;
+            }
+            
+            p.test2 {
+              white-space: nowrap; 
+              width: 200px; 
+              border: 1px solid #000000;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h1>The text-overflow Property</h1>
+            <p>The following two paragraphs contains a long text that will not fit in the box.</p>
+            
+            <h2>text-overflow: clip:</h2>
+            <p class="test1">This is some long text that will not fit in the box</p>
+            
+            <h2>text-overflow: ellipsis:</h2>
+            <p class="test2">This is some long text that will not fit in the box</p>
+            
+        </fieldset>
+        <fieldset>
+          <style> 
+            p.test11 {
+              writing-mode: horizontal-tb; 
+            }
+            
+            span.test22 {
+              writing-mode: vertical-rl; 
+            }
+            
+            p.test22 {
+              writing-mode: vertical-rl; 
+            }
+            </style>
+            
+            <h1>The writing-mode Property</h1>
+            
+            <p class="test11">Some text with default writing-mode.</p>
+            
+            <p>Some text with a span element with a <span class="test22">vertical-rl</span> writing-mode.</p>
+            
+            <p class="test22">Some text with writing-mode: vertical-rl.</p>
+        </fieldset>
+        <fieldset>
+          <style> 
+            div.test23 {
+              white-space: nowrap; 
+              width: 200px; 
+              overflow: hidden; 
+              border: 1px solid #000000;
+            }
+            
+            div.test23:hover {
+              overflow: visible;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <p>Hover over the two divs below, to see the entire text.</p>
+            <div class="test23" style="text-overflow:ellipsis;">This is some long text that will not fit in the box</div>
+            <br>
+            <div class="test23" style="text-overflow:clip;">This is some long text that will not fit in the box</div>
+        </fieldset>
+      </fieldset>
     
     </div>
 </div>
