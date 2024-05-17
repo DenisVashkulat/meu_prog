@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Звіт з лабораторних робіт</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div>
+          <h1 class="text1">Звіти з лабораторних робіт</h1>
+          <h2 class="text1">З дисципліни "Програмування інтернет-застосуввань"</h2>
+        </div>
+        <div class="head2">
+            <div class="space">
+          <div class="student">
+            <h2>Студент: Вашкулат Денис Олександрович</h2>
+            <h2>Група: ІПЗ-21-301</h2>
+          </div>
+          <div class="fotoblock">
+            <img src="../image/foto (2).jpg" alt="" class="foto">
+        </div>
+          </div>
+        </div>
+      </header>
+      
+  <main>
+    <div class="blocklab">
+      <a href="../lab1/lab1.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №1</p>
+        </div>
+      </a>
+      <a href="../lab2/lab2.html"
+        ><div class="lab-report">
+          <p>Лабораторна робота №2</p>
+        </div>
+      </a>
+
+      <a href="../lab3/lab3.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №3</p>
+        </div>
+      </a>
+
+      <a href="../lab4/lab4.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №4</p>
+        </div>
+      </a>
+
+      <a href="../lab5/lab5.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №5</p>
+        </div>
+      </a>
+
+      <a href="../lab6/lab6.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №6-7</p>
+        </div>
+      </a>
+
+      <a href="lab7/lab7.html">
+        <div class="lab-reportactive">
+          <p>Лабораторна робота №8-9</p>
+        </div>
+      </a>
+    </div>
+
+<div class="infocontent">
+<div class="buttoncont">
+    <a href="lab7.html"><div class="button1"><h3>ПОСТАНОВКА ЗАДАЧІ Лабораторної №6-7</h3></div></a>
+    <a href="lab7.1.html"><div class="button1"><h3>Способи застосування об&#39;єктів.</h3></div></a>
+    <a href="lab7.2.html"><div class="buttonactive"><h3>Завдання</h3></div></a>
+    <a href="lab7.3.html"><div class="button1"><h3>Висновок</h3></div></a>
+ 
+</div>
+<div class="infocont">
+    <div class="info">
+      <h4>Завдання:</h4>
+      <p>У звітному HTML-документі створити html-розміту,
+        яка складається з наступних елементів : текст, кнопка,
+        два інпута (поля введення ).
+        
+        Після натискання кнопки &quot;SWAP ME&quot; здійснюється
+        обмін вмістом між двома інпутами.
+        Ви можете натиснути на неї кілька разів або вручну
+        змінити вміст інпутів.
+        У звітному HTML-документі відобразити скрін
+        програмного коду.</p>
+        <h4>Демонстрація:</h4>
+        <div class="green">
+            <p>Це приклад обміну значеннями між двома інпутами.</p>
+            <input type="text" id="input1" placeholder="Введіть значення">
+            <input type="text" id="input2" placeholder="Введіть значення">
+            <button onclick="swapInputs()">SWAP ME</button>
+        </div>
+    
+        <script>
+            function swapInputs() {
+                // Отримуємо значення з обох інпутів
+                var input1 = document.getElementById('input1').value;
+                var input2 = document.getElementById('input2').value;
+    
+                // Міняємо значення між інпутами
+                document.getElementById('input1').value = input2;
+                document.getElementById('input2').value = input1;
+            }
+        </script>
+        <h4>Code:</h4>
+        <code><pre>
+            &lt;div class="green">
+            &lt;p>Це приклад обміну значеннями між двома інпутами.&lt;/p>
+            &lt;input type="text" id="input1" placeholder="Введіть значення">
+            &lt;input type="text" id="input2" placeholder="Введіть значення">
+            &lt;button onclick="swapInputs()">SWAP ME&lt;/button>
+            &lt;/div>
+        
+            &lt;script>
+                function swapInputs() {
+                    // Отримуємо значення з обох інпутів
+                    var input1 = document.getElementById('input1').value;
+                    var input2 = document.getElementById('input2').value;
+        
+                    // Міняємо значення між інпутами
+                    document.getElementById('input1').value = input2;
+                    document.getElementById('input2').value = input1;
+                }
+        </pre></code>
+        <h4>Завдання:</h4>
+        <p>У звітному HTML-документі створити html-розміту,
+            яка складається з наступних елементів : текст, блок
+            (div), дві кнопки
+            
+            Результат:
+            
+            Кнопка &quot;Зменшити&quot; робить квадрат менше на 15
+            пікселів.
+            Повторний натиск на кнопці Зменшити&quot;   робить
+            квадрат ще менше на 15 пікселів.
+            &quot;Збільшити&quot; – робить квадрат більше на 15 пікселів.
+            Повторний натиск на кнопці &quot;Зменшити&quot;   робить
+            квадрат ще більше на 15 пікселів.
+            У звітному HTML-документі відобразити скрін
+            програмного коду</p>
+        <h4>Демонстрація:</h4>
+        <p>Натисніть на кнопки, щоб зменшити або збільшити квадрат:</p>
+
+    <div id="square"></div>
+    <button onclick="decreaseSize()">Зменшити</button>
+    <button onclick="increaseSize()">Збільшити</button>
+
+    <script>
+        function decreaseSize() {
+            var square = document.getElementById('square');
+            var currentWidth = square.offsetWidth;
+            var currentHeight = square.offsetHeight;
+            square.style.width = (currentWidth - 15) + 'px';
+            square.style.height = (currentHeight - 15) + 'px';
+        }
+
+        function increaseSize() {
+            var square = document.getElementById('square');
+            var currentWidth = square.offsetWidth;
+            var currentHeight = square.offsetHeight;
+            square.style.width = (currentWidth + 15) + 'px';
+            square.style.height = (currentHeight + 15) + 'px';
+        }
+    </script>
+    <h4>Code:</h4>
+    <code><pre>
+        &lt;div id="square">&lt;/div>
+        &lt;button onclick="decreaseSize()">Зменшити&lt;/button>
+        &lt;button onclick="increaseSize()">Збільшити&lt;/button>
+    
+        &lt;script>
+            function decreaseSize() {
+                var square = document.getElementById('square');
+                var currentWidth = square.offsetWidth;
+                var currentHeight = square.offsetHeight;
+                square.style.width = (currentWidth - 15) + 'px';
+                square.style.height = (currentHeight - 15) + 'px';
+            }
+    
+            function increaseSize() {
+                var square = document.getElementById('square');
+                var currentWidth = square.offsetWidth;
+                var currentHeight = square.offsetHeight;
+                square.style.width = (currentWidth + 15) + 'px';
+                square.style.height = (currentHeight + 15) + 'px';
+            }
+            &lt;/script>
+    </pre></code>
+    <h4>Завдання:</h4>
+    <p>У звітному HTML-документі створити html-розміту,
+        яка складається з наступних елементів : текст,
+        маркирований список.
+        
+        Результат:
+        
+        Натиснувши кнопку &quot;Подвоїти&quot;, збільшити значення
+        у кожному елементі списку у 2 рази. Повторний натиск
+        на кнопці &quot;Подвоїти&quot;, також збільшить значення у
+        кожному елементі списку у 2 рази
+        У звітному HTML-документі відобразити скрін
+        програмного коду</p>
+        <h4>Демонстрація:</h4>
+        <p>Натисніть кнопку, щоб подвоїти значення у кожному елементі списку:</p>
+    <ul id="list">
+        <li> 1 </li>
+        <li> 2 </li>
+        <li> 3 </li>
+        <li> 4 </li>
+    </ul>
+    <button onclick="doubleValues()">Подвоїти</button>
+
+    <script>
+        function doubleValues() {
+            var list = document.getElementById('list');
+            var items = list.getElementsByTagName('li');
+            for (var i = 0; i < items.length; i++) {
+                var currentValue = parseInt(items[i].innerText);
+                items[i].innerText = currentValue * 2;
+            }
+        }
+    </script>
+    <h4>Code:</h4>
+    <code><pre>
+        &lt;p>Натисніть кнопку, щоб подвоїти значення у кожному елементі списку:</p>
+        &lt;ul id="list">
+        &lt;li> 1 </li>
+        &lt;li> 2 </li>
+        &lt;li> 3 </li>
+        &lt;li> 4 </li>
+        </ul>
+        &lt;button onclick="doubleValues()">Подвоїти</button>
+    
+        &lt;script>
+            function doubleValues() {
+                var list = document.getElementById('list');
+                var items = list.getElementsByTagName('li');
+                for (var i = 0; i < items.length; i++) {
+                    var currentValue = parseInt(items[i].innerText);
+                    items[i].innerText = currentValue * 2;
+                }
+            }
+            &lt;/script>
+    </pre></code>
+    <h4>Завдання:</h4>
+    <p>Напиши скрипт управління формою логіна.</p>
+        <code><pre>
+        &lt;form class=&quot;login-form&quot;&gt;
+        &lt;label&gt;
+        Email
+        &lt;input type=&quot;email&quot; name=&quot;email&quot; /&gt;
+        &lt;/label&gt;
+        &lt;label&gt;
+        Password
+        &lt;input type=&quot;password&quot; name=&quot;password&quot; /&gt;
+        &lt;/label&gt;
+        &lt;button type=&quot;submit&quot;&gt;Log in&lt;/button&gt;
+        &lt;/form&gt;
+    </pre></code>
+        
+        <p>1. Обробка відправлення форми form.login-
+        form повинна відбуватися за подією submit.</p>
+        <p>2. Під час відправлення форми сторінка не повинна
+        перезавантажуватися.</p>
+        <p>3. Якщо при сабміті у формі є незаповнені поля,
+        виводь alert з попередженням про те, що &#39;All
+        form fields must be filled in&#39;. Не
+        додавай на інпути атрибут required, валідація має
+        відбуватися саме через JS.</p>
+        <p>4. Якщо користувач заповнив усі поля і відправив
+        форму, збери значення полів в об&#39;єкт з двома
+        властивостями, де ключ — це ім&#39;я інпутів, а
+        значення — відповідні значення цих інпутів,
+        очищені від пробілів по краях. Для доступу до
+        елементів форми використовуй
+        властивість elements.</p> 
+        <p>5. При сабміті форми виведи об&#39;єкт із введеними
+        даними в консоль і очисти значення полів форми
+        методом reset.</p>
+ <H4>Демонстрація:</H4>
+ <form class="login-form">
+    <label>
+        Email
+        <input type="email" name="email" />
+    </label>
+    <label>
+        Password
+        <input type="password" name="password" />
+    </label>
+    <button type="submit">Log in</button>
+</form>
+
+<script>
+    document.querySelector('.login-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Перешкоджаємо перезавантаженню сторінки
+
+        var email = this.elements.email.value.trim(); // Отримуємо значення email та очищуємо від пробілів
+        var password = this.elements.password.value.trim(); // Отримуємо значення паролю та очищуємо від пробілів
+
+        // Перевіряємо, чи всі поля заповнені
+        if (email === '' || password === '') {
+            alert('All form fields must be filled in');
+            return;
+        }
+
+        // Формуємо об'єкт з введеними даними
+        var formData = {
+            email: email,
+            password: password
+        };
+
+        // Виводимо об'єкт з введеними даними в консоль
+        console.log(formData);
+
+        // Очищаємо значення полів форми
+        this.reset();
+    });
+</script>
+<h4>Code:</h4>
+<code><pre>
+&lt;form class="login-form">
+&lt;label>
+        Email
+        &lt;input type="email" name="email" />
+        &lt;/label>
+        &lt;label>
+        Password
+        &lt;input type="password" name="password" />
+        &lt;/label>
+        &lt;button type="submit">Log in</button>
+        &lt;/form>
+
+        &lt;script>
+    document.querySelector('.login-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Перешкоджаємо перезавантаженню сторінки
+
+        var email = this.elements.email.value.trim(); // Отримуємо значення email та очищуємо від пробілів
+        var password = this.elements.password.value.trim(); // Отримуємо значення паролю та очищуємо від пробілів
+
+        // Перевіряємо, чи всі поля заповнені
+        if (email === '' || password === '') {
+            alert('All form fields must be filled in');
+            return;
+        }
+
+        // Формуємо об'єкт з введеними даними
+        var formData = {
+            email: email,
+            password: password
+        };
+
+        // Виводимо об'єкт з введеними даними в консоль
+        console.log(formData);
+
+        // Очищаємо значення полів форми
+        this.reset();
+    });
+    &lt;/script>
+  </pre></code>
+  <h4>Завдання:</h4>
+    <p>Напиши скрипт створення й очищення колекції
+      елементів з наступним функціоналом.
+      Є input, у який користувач вводить бажану кількість
+      елементів. Після натискання на кнопку Create має
+      рендеритися (додаватися в DOM) колекція з
+      відповідною кількістю елементів і очищатися значення
+      в інпуті. При повторному натисканні на
+      кнопку Create поверх старої колекції має рендеритись
+      нова. Після натискання на кнопку Destroy колекція
+      елементів має очищатися</p>
+      <code><pre>
+      &lt;div id=&quot;controls&quot;&gt;
+      &lt;input type=&quot;number&quot; min=&quot;1&quot; max=&quot;100&quot;
+      step=&quot;1&quot; /&gt;
+      &lt;button type=&quot;button&quot; data-
+      create&gt;Create&lt;/button&gt;
+      &lt;button type=&quot;button&quot; data-
+      destroy&gt;Destroy&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div id=&quot;boxes&quot;&gt;&lt;/div&gt;
+    </pre></code>
+      Після натискання користувачем на
+      кнопку Create треба провалідувати значення в input,
+      воно має бути в межах від 1 до 100 включно. Тільки
+      якщо воно задоволяє умову, мають додаватися
+      нові &lt;div&gt; елементи в DOM.
+      Для рендеру елементів на сторінці створи
+      функцію createBoxes(amount), яка приймає один
+      параметр — число, що зберігає кількість елементів для
+      рендеру. Функція має створювати
+      стільки &lt;div&gt; елементів, скільки вказано
+      в параметрі amount і додавати їх у DOM дочірніми
+      елементами для div#boxes.
+      <p>1. Розміри першого &lt;div&gt; елемента мають бути
+      30px на 30px.</p>
+      <p>2. Кожен наступний елемент повинен бути ширшим</p>
+      <H4>Демонстрація:</H4>
+      <img src="../image/lab7.png">
+      <h4>Code:</h4>
+      <code><pre>
+        &lt;div id="controls">
+        &lt;input type="number" min="1" max="100" step="1" />
+        &lt;button type="button" data-create>Create&lt;/button>
+        &lt;button type="button" data-destroy>Destroy&lt;/button>
+        &lt;/div>
+      &lt;div id="boxes">&lt;/div>
+  
+      &lt;script>
+          function getRandomHexColor() {
+              return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')}`;
+          }
+  
+          document.querySelector('[data-create]').addEventListener('click', function() {
+              var amount = document.querySelector('input').value;
+              if (amount < 1 || amount > 100) {
+                  alert('Please enter a number between 1 and 100.');
+                  return;
+              }
+              createBoxes(amount);
+          });
+  
+          document.querySelector('[data-destroy]').addEventListener('click', destroyBoxes);
+  
+          function createBoxes(amount) {
+              var boxesContainer = document.getElementById('boxes');
+              boxesContainer.innerHTML = ''; // Очищення попередніх елементів
+  
+              var size = 30;
+              for (var i = 0; i < amount; i++) {
+                  var div = document.createElement('div');
+                  div.style.width = size + 'px';
+                  div.style.height = size + 'px';
+                  div.style.backgroundColor = getRandomHexColor();
+                  div.style.marginBottom = '10px';
+                  boxesContainer.appendChild(div);
+                  size += 10;
+              }
+          }
+  
+          function destroyBoxes() {
+              var boxesContainer = document.getElementById('boxes');
+              boxesContainer.innerHTML = '';
+          }
+          &lt;/script>
+      </pre></code>
+    </div>
+</div>
+</div>
+    </main>
+  <footer>
+    <p>&copy; 2024 Всі права захищені.</p>
+  </footer>
+</body>
+</html>

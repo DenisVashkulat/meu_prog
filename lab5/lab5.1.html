@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Звіт з лабораторних робіт</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div>
+          <h1 class="text1">Звіти з лабораторних робіт</h1>
+          <h2 class="text1">З дисципліни "Програмування інтернет-застосуввань"</h2>
+        </div>
+        <div class="head2">
+            <div class="space">
+          <div class="student">
+            <h2>Студент: Вашкулат Денис Олександрович</h2>
+            <h2>Група: ІПЗ-21-301</h2>
+          </div>
+          <div class="fotoblock">
+            <img src="../image/foto (2).jpg" alt="" class="foto">
+        </div>
+          </div>
+        </div>
+      </header>
+      
+  <main>
+    <div class="blocklab">
+      <a href="../lab1/lab1.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №1</p>
+        </div>
+      </a>
+      <a href="../lab2/lab2.html"
+        ><div class="lab-report">
+          <p>Лабораторна робота №2</p>
+        </div>
+      </a>
+
+      <a href="../lab3/lab3.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №3</p>
+        </div>
+      </a>
+
+      <a href="lab4.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №4</p>
+        </div>
+      </a>
+
+      <a href="../lab4/lab4.html">
+        <div class="lab-reportactive">
+          <p>Лабораторна робота №5</p>
+        </div>
+      </a>
+
+      <a href="../lab6/lab6.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №6-7</p>
+        </div>
+      </a>
+
+      <a href="../lab7/lab7.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №8-9</p>
+        </div>
+      </a>
+    </div>
+
+<div class="infocontent">
+<div class="buttoncont">
+    <a href="lab5.html"><div class="button1"><h3>ПОСТАНОВКА ЗАДАЧІ Лабораторної №5</h3></div></a>
+    <a href="lab5.1.html"><div class="buttonactive"><h3>Способи функцінувального застосування JavaScript</h3></div></a>
+    
+    <a href="lab5.2.html"><div class="button2"><h3>Схема URL</h3></div></a>
+    <a href="lab5.3.html"><div class="button2"><h3>Обробник подій</h3></div></a>
+    <a href="lab5.4.html"><div class="button2"><h3>Підстановка(entity)</h3></div></a>
+    <a href="lab5.5.html"><div class="button2"><h3>Вставка(тег SCRIPT)</h3></div></a>
+    
+    <a href="lab5.6.html"><div class="button1"><h3>МАСИВИ</h3></div></a>
+    <a href="lab5.7.html"><div class="button1"><h3>Динамічне меню</h3></div></a>
+    <a href="lab5.8.html"><div class="button1"><h3>Висновки</h3></div></a>
+</div>
+<div class="infocont">
+    <div class="info">
+      <h2>JavaScript</h2>
+      <p>Функціональне застосування JavaScript охоплює багато аспектів, включаючи обробку подій, маніпуляції з DOM, роботу з масивами та об'єктами, анімацію, взаємодію з сервером і багато іншого. Ось деякі основні способи функціонального використання JavaScript:</p>
+      <h4>1. Обробка подій</h4>
+      <p>JavaScript використовує обробники подій для реагування на дії користувача або системні події. Це може бути клік на кнопку, введення тексту в поле, наведення курсору миші на елемент тощо.</p>
+      <code><Pre>
+        document.getElementById("myButton").addEventListener("click", function() {
+        alert("Кнопку натиснуто!");
+      });
+      </Pre></code>
+      <h4>2. Робота з DOM</h4>
+      <p>JavaScript використовується для зміни структури та змісту сторінки в реальному часі, що дозволяє додавати, видаляти або змінювати елементи HTML.</p>
+      <code><pre>
+        // Додати новий елемент до DOM
+        let newElement = document.createElement("div");
+        newElement.textContent = "Новий елемент";
+        document.getElementById("container").appendChild(newElement);
+        
+        // Змінити вміст елементу
+        document.getElementById("myParagraph").textContent = "Новий текст";
+        
+        // Видалити елемент
+        let elementToRemove = document.getElementById("toBeRemoved");
+        elementToRemove.parentNode.removeChild(elementToRemove);         
+      </pre></code>
+      <h4>3. Маніпуляції з масивами та об'єктами</h4>
+      <p>JavaScript використовується для роботи з масивами та об'єктами, дозволяючи виконувати операції з даними.</p>
+      <code><pre>
+        // Масив
+        let myArray = [1, 2, 3, 4, 5];
+        let doubledArray = myArray.map(function(num) {
+          return num * 2;
+        });
+        console.log(doubledArray); // [2, 4, 6, 8, 10]
+        
+        // Об'єкт
+        let myObject = { name: "John", age: 30, city: "New York" };
+        console.log(myObject.name); // John
+        myObject.age = 31;
+        console.log(myObject.age); // 31         
+      </pre></code>
+      <h4>4. Взаємодія з сервером</h4>
+      <p>JavaScript дозволяє виконувати асинхронні запити на сервер і отримувати дані, що дозволяє оновлювати сторінку без перезавантаження.</p>
+      <code><pre>
+        fetch('https://api.example.com/data')
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);
+          // Обробка отриманих даних
+        })
+        .catch(error => {
+          console.error('Помилка:', error);
+        });       
+      </pre></code>
+      <h4>5. Анімація</h4>
+      <p>JavaScript використовується для створення анімаційних ефектів на сторінці.</p>
+      <code><pre>
+        let element = document.getElementById("myElement");
+
+        function moveElement() {
+          let position = 0;
+          let id = setInterval(frame, 10);
+        
+          function frame() {
+            if (position == 350) {
+              clearInterval(id);
+            } else {
+              position++;
+              element.style.top = position + "px";
+              element.style.left = position + "px";
+            }
+          }
+        }
+        
+        element.addEventListener("click", moveElement);
+      </pre></code>
+    </div>
+</div>
+</div>
+   
+    
+   
+    
+    
+    
+  
+    
+    
+      
+      
+    </main>
+  <footer>
+    <p>&copy; 2024 Всі права захищені.</p>
+  </footer>
+</body>
+</html>

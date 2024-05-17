@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Звіт з лабораторних робіт</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div>
+          <h1 class="text1">Звіти з лабораторних робіт</h1>
+          <h2 class="text1">З дисципліни "Програмування інтернет-застосуввань"</h2>
+        </div>
+        <div class="head2">
+            <div class="space">
+          <div class="student">
+            <h2>Студент: Вашкулат Денис Олександрович</h2>
+            <h2>Група: ІПЗ-21-301</h2>
+          </div>
+          <div class="fotoblock">
+            <img src="../image/foto (2).jpg" alt="" class="foto">
+        </div>
+          </div>
+        </div>
+      </header>
+      
+  <main>
+    <div class="blocklab">
+      <a href="../lab1/lab1.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №1</p>
+        </div>
+      </a>
+      <a href="../lab2/lab2.html"
+        ><div class="lab-report">
+          <p>Лабораторна робота №2</p>
+        </div>
+      </a>
+
+      <a href="../lab3/lab3.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №3</p>
+        </div>
+      </a>
+
+      <a href="../lab4/lab4.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №4</p>
+        </div>
+      </a>
+
+      <a href="../lab5/lab5.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №5</p>
+        </div>
+      </a>
+
+      <a href="lab6/lab6.html">
+        <div class="lab-reportactive">
+          <p>Лабораторна робота №6-7</p>
+        </div>
+      </a>
+
+      <a href="../lab7/lab7.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №8-9</p>
+        </div>
+      </a>
+    </div>
+
+<div class="infocontent">
+<div class="buttoncont">
+    <a href="lab6.html"><div class="button1"><h3>ПОСТАНОВКА ЗАДАЧІ Лабораторної №6-7</h3></div></a>
+    <a href="lab6.1.html"><div class="button1"><h3>Способи застосування об&#39;єктів.</h3></div></a>
+    <a href="lab6.2.html"><div class="buttonactive"><h3>Завдання</h3></div></a>
+    <a href="lab6.3.html"><div class="button1"><h3>Висновок</h3></div></a>
+ 
+</div>
+<div class="infocont">
+    <div class="info">
+      <h4>Завдання:</h4>
+      <p>2. Напишіть функцію getProductDetails, яка приймає
+        ідентифікатор товару productId та дві колбек-функції
+        successCallback та errorCallback.
+        
+        // Функція getProductDetails повинна отримати деталі
+        про вказаний товар та передати їх у successCallback.
+        // У випадку якщо товар не знайдено, викликається
+        errorCallback і передається повідомлення про
+        помилку.</p>
+      <h4>Демонстрація:</h4>
+      <img src="../image/lab6.1.png">
+      <h4>Код:</h4>
+      <code><pre>
+        &lt;script>
+        function getProductDetails(productId, successCallback, errorCallback) {
+        // Симулюємо отримання деталей товару з деякого джерела даних
+        let productDetails = getProductDetailsFromDatabase(productId);
+        
+        // Перевіряємо, чи отримали ми деталі товару
+        if (productDetails) {
+        // Якщо так, викликаємо успішний колбек і передаємо деталі товару
+        successCallback(productDetails);
+        } else {
+        // Якщо деталі не знайдено, викликаємо колбек з помилкою
+        errorCallback("Товар з вказаним ідентифікатором не знайдено.");
+        }
+        }
+        
+        // Функція для симулювання отримання деталей товару з бази даних
+        function getProductDetailsFromDatabase(productId) {
+        
+        return null;
+        }
+        
+        // Приклад використання функції getProductDetails
+        getProductDetails(
+        "12345",
+        function(details) {
+        console.log("Деталі товару:", details);
+        },
+        function(error) {
+        console.error("Помилка:", error);
+        }
+        );
+        
+        &lt;/script>
+      </pre></code>
+      <p>4. З об&#39;єкту concerts отримати масив, який буде
+        містити лише імена міст.
+          З масиву потрібно прибрати міста, в яких концерт уже
+        пройшов і   відсортувати їх у хронологічному порядку.
+          Результат вивести у консоль.
+          Очікуваний результат [&quot;Одеса&quot;, &quot;Умань&quot;, &quot;Харків&quot;]
+        Застосувати стрілочні функції
+        const concerts = {
+            Київ: new Date(&quot;2020-04-01&quot;),
+            Умань: new Date(&quot;2025-07-02&quot;),
+            Вінниця: new Date(&quot;2020-04-21&quot;),
+            Одеса: new Date(&quot;2025-03-15&quot;),
+            Хмельницький: new Date(&quot;2020-04-18&quot;),
+            Харків: new Date(&quot;2025-07-10&quot;),
+        };</p>
+      <h4>Демонстрація:</h4>
+      <img src="../image/lab6.2.png">
+      <h4>Код:</h4>
+      <code><pre>
+        &lt;script>
+            const concerts = {
+        Київ: new Date("2020-04-01"),
+        Умань: new Date("2025-07-02"),
+        Вінниця: new Date("2020-04-21"),
+        Одеса: new Date("2025-03-15"),
+        Хмельницький: new Date("2020-04-18"),
+        Харків: new Date("2025-07-10"),
+    };
+    
+    // Отримуємо масив імен міст
+    const cityNames = Object.keys(concerts);
+    
+    // Видаляємо міста, в яких концерт вже пройшов
+    const futureCities = cityNames.filter(city => concerts[city] > new Date());
+    
+    // Сортуємо міста у хронологічному порядку
+    const sortedCities = futureCities.sort((a, b) => concerts[a] - concerts[b]);
+    
+    // Виводимо результат у консоль
+    console.log(sortedCities);
+    
+    &lt;/script>
+      </pre></code>
+    
+    <p>6. Напишіть функцію, яка приймає массив об&#39;єктів і
+        повертає новий массивоб&#39;єктів,у якому є знижка на 30 %
+        на всі медикаменти ціна, яких перевищує 300 грн у
+        масивіНадайте ід для кожного медикамента const
+        medicines = [
+            { name: &quot;Noshpa&quot;, price: 170 },
+            { name: &quot;Analgin&quot;, price: 55 },
+            { name: &quot;Quanil&quot;, price: 310 },
+            { name: &quot;Alphacholine&quot;, price: 390 },
+          ];</p>
+      <h4>Демонстрація:</h4>
+      <img src="../image/lab6.3.png">
+      <h4>Код:</h4>
+      <code><pre>
+        &lt;script>
+            const medicines = [
+        { name: "Noshpa", price: 170 },
+        { name: "Analgin", price: 55 },
+        { name: "Quanil", price: 310 },
+        { name: "Alphacholine", price: 390 },
+    ];
+    
+    function applyDiscount(medicines) {
+        return medicines.map(medicine => {
+            // Перевіряємо, чи ціна медикаменту перевищує 300 грн
+            if (medicine.price > 300) {
+                // Застосовуємо знижку на 30%
+                const discountedPrice = medicine.price * 0.7;
+                // Повертаємо новий об'єкт медикаменту зі знижкою
+                return { ...medicine, price: discountedPrice };
+            } else {
+                // Якщо ціна медикаменту не перевищує 300 грн, повертаємо його без змін
+                return medicine;
+            }
+        });
+    }
+    
+    const discountedMedicines = applyDiscount(medicines);
+    console.log(discountedMedicines);
+    
+    &lt;/script>
+      </pre></code>
+      <p>8. Напиши функцію конструктор Storage який створює
+        об&#39;єкти Для управління складом товарів. При виклику
+        отримуватиме один агрумент - початковий масив
+        товарів, і записувати їх у властивість items.
+        Додай методи класу: getItems() - повертайте масив
+        товарів addItems(item) - отримує новий товар та додає
+        його до поточних removeItem(item) - отримує товар і,
+        якщо він є, видаляє його з поточних
+        const arr = [&quot;apple&quot;, &quot;banana&quot;, &quot;mango&quot;]</p>
+      <h4>Демонстрація:</h4>
+      <img src="../image/lab6.4.png">
+      <h4>Код:</h4>
+      <code><pre>
+        &lt;script>
+            function Storage(initialItems) {
+        // Початковий масив товарів
+        this.items = initialItems;
+    
+        // Метод для отримання всіх товарів
+        this.getItems = function() {
+            return this.items;
+        };
+    
+        // Метод для додавання нового товару
+        this.addItem = function(item) {
+            this.items.push(item);
+        };
+    
+        // Метод для видалення товару
+        this.removeItem = function(item) {
+            const index = this.items.indexOf(item);
+            if (index !== -1) {
+                this.items.splice(index, 1);
+            }
+        };
+    }
+    
+    // Приклад використання
+    const arr = ["apple", "banana", "mango"];
+    const storage = new Storage(arr);
+    
+    console.log(storage.getItems()); // ["apple", "banana", "mango"]
+    
+    storage.addItem("orange");
+    console.log(storage.getItems()); // ["apple", "banana", "mango", "orange"]
+    
+    storage.removeItem("banana");
+    console.log(storage.getItems()); // ["apple", "mango", "orange"]
+    
+    &lt;/script>
+      </pre></code>
+      <p>10. Напишіть функцію checkBrackets(str) яка приймає
+        рядок жс коду (someFn)  і перевіряє правильність
+        закриття дужок () {} []
+          Якщо рядок містить коректний код функція повертає
+        true. В іншому випадку повертає false</p>
+      <h4>Демонстрація:</h4>
+      <img src="../image/lab6.5.png">
+      <h4>Код:</h4>
+      <code><pre>
+        &lt;script>
+            function checkBrackets(str) {
+        const stack = [];
+        const openingBrackets = ['(', '[', '{'];
+        const closingBrackets = [')', ']', '}'];
+        
+        for (let char of str) {
+            if (openingBrackets.includes(char)) {
+                stack.push(char);
+            } else if (closingBrackets.includes(char)) {
+                const matchingOpeningBracket = openingBrackets[closingBrackets.indexOf(char)];
+                if (stack.length === 0 || stack.pop() !== matchingOpeningBracket) {
+                    return false;
+                }
+            }
+        }
+        
+        return stack.length === 0;
+    }
+    
+    // Приклад використання
+    const someFn = "function() { console.log('Hello world!'); }";
+    console.log(checkBrackets(someFn)); // true
+    
+    &lt;/script>
+      </pre></code>
+</div>
+</div>
+   
+    
+   
+    
+    
+    
+  
+    
+    
+      
+      
+    </main>
+  <footer>
+    <p>&copy; 2024 Всі права захищені.</p>
+  </footer>
+</body>
+</html>

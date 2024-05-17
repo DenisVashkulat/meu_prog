@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Звіт з лабораторних робіт</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div>
+          <h1 class="text1">Звіти з лабораторних робіт</h1>
+          <h2 class="text1">З дисципліни "Програмування інтернет-застосуввань"</h2>
+        </div>
+        <div class="head2">
+            <div class="space">
+          <div class="student">
+            <h2>Студент: Вашкулат Денис Олександрович</h2>
+            <h2>Група: ІПЗ-21-301</h2>
+          </div>
+          <div class="fotoblock">
+            <img src="../image/foto (2).jpg" alt="" class="foto">
+        </div>
+          </div>
+        </div>
+      </header>
+      
+  <main>
+    <div class="blocklab">
+      <a href="../lab1/lab1.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №1</p>
+        </div>
+      </a>
+      <a href="../lab2/lab2.html"
+        ><div class="lab-report">
+          <p>Лабораторна робота №2</p>
+        </div>
+      </a>
+
+      <a href="../lab3/lab3.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №3</p>
+        </div>
+      </a>
+
+      <a href="../lab4/lab4.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №4</p>
+        </div>
+      </a>
+
+      <a href="../lab5/lab5.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №5</p>
+        </div>
+      </a>
+
+      <a href="../lab6/lab6.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №6-7</p>
+        </div>
+      </a>
+
+      <a href="lab7/lab7.html">
+        <div class="lab-reportactive">
+          <p>Лабораторна робота №8-9</p>
+        </div>
+      </a>
+    </div>
+
+<div class="infocontent">
+<div class="buttoncont">
+    <a href="lab7.html"><div class="button1"><h3>ПОСТАНОВКА ЗАДАЧІ Лабораторної №6-7</h3></div></a>
+    <a href="lab7.1.html"><div class="buttonactive"><h3>Способи застосування об&#39;єктів.</h3></div></a>
+    <a href="lab7.2.html"><div class="button1"><h3>Завдання</h3></div></a>
+    <a href="lab7.3.html"><div class="button1"><h3>Висновок</h3></div></a>
+ 
+</div>
+<div class="infocont">
+    <div class="info">
+      <h4>Способи застосування:</h4>
+     <h3>Класи</h3>
+     <code><pre>
+        // Використання класів для створення об'єктно-орієнтованих структур даних
+ class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Метод класу
+    greet() {
+        return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+    }
+ }
+
+ // Створення об'єктів за допомогою класу
+ let person1 = new Person('John', 30);
+ let person2 = new Person('Alice', 25);
+
+ console.log(person1.greet()); // Hello, my name is John and I am 30 years old.
+ console.log(person2.greet()); // Hello, my name is Alice and I am 25 years old.
+     </pre></code>
+     <h3>Об'єктна модель документа (DOM)</h3>
+     <button id="changeTextButton" class="button">Change Text</button>
+     <p id="textElement">Original Text</p>
+     
+     <script>
+         // Робота з DOM для динамічної зміни та маніпуляцій з елементами веб-сторінки
+         const textElement = document.getElementById('textElement');
+         const changeTextButton = document.getElementById('changeTextButton');
+     
+         changeTextButton.addEventListener('click', function() {
+             textElement.textContent = 'Updated Text';
+         });
+     </script>
+     <h4>Code:</h4>
+     <code><pre>
+        &lt;button id="changeTextButton" class="button">Change Text&lt;/button>
+        &lt;p id="textElement">Original Text&lt;/p>
+
+ &lt;script>
+    // Робота з DOM для динамічної зміни та маніпуляцій з елементами веб-сторінки
+    const textElement = document.getElementById('textElement');
+    const changeTextButton = document.getElementById('changeTextButton');
+
+    changeTextButton.addEventListener('click', function() {
+        textElement.textContent = 'Updated Text';
+    });
+</script>
+     </pre></code>
+    <h4>Події та об'єкт події</h4>
+    <button id="myButton">Click Me</button>
+
+<script>
+    // Додавання обробників подій за допомогою addEventListener
+    const myButton = document.getElementById('myButton');
+
+    myButton.addEventListener('click', function(event) {
+        // Робота з об'єктом події
+        console.log('Button clicked');
+        console.log('Event Type:', event.type);
+        console.log('Target Element:', event.target);
+    });
+</script>
+<h4>Code:</h4>
+<code><pre>
+    &lt;button id="myButton">Click Me&lt;/button>
+
+    &lt;script>
+    // Додавання обробників подій за допомогою addEventListener
+    const myButton = document.getElementById('myButton');
+
+    myButton.addEventListener('click', function(event) {
+        // Робота з об'єктом події
+        console.log('Button clicked');
+        console.log('Event Type:', event.type);
+        console.log('Target Element:', event.target);
+    });
+    &lt;/script>
+</pre></code>
+
+    </div>
+</div>
+</div>
+   
+    
+   
+    
+    
+    
+  
+    
+    
+      
+      
+    </main>
+  <footer>
+    <p>&copy; 2024 Всі права захищені.</p>
+  </footer>
+</body>
+</html>

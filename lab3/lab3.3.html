@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Звіт з лабораторних робіт</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div>
+          <h1 class="text1">Звіти з лабораторних робіт</h1>
+          <h2 class="text1">З дисципліни "Програмування інтернет-застосуввань"</h2>
+        </div>
+        <div class="head2">
+            <div class="space">
+          <div class="student">
+            <h2>Студент: Вашкулат Денис Олександрович</h2>
+            <h2>Група: ІПЗ-21-301</h2>
+          </div>
+          <div class="fotoblock">
+            <img src="../image/foto (2).jpg" alt="" class="foto">
+        </div>
+          </div>
+        </div>
+      </header>
+      
+  <main>
+    <div class="blocklab">
+      <a href="../lab1/lab1.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №1</p>
+        </div>
+      </a>
+      <a href="../lab2/lab2.html"
+        ><div class="lab-report">
+          <p>Лабораторна робота №2</p>
+        </div>
+      </a>
+
+      <a href="lab3/lab3.html">
+        <div class="lab-reportactive">
+          <p>Лабораторна робота №3</p>
+        </div>
+      </a>
+
+      <a href="../lab4/lab4.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №4</p>
+        </div>
+      </a>
+
+      <a href="../lab5/lab5.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №5</p>
+        </div>
+      </a>
+
+      <a href="../lab6/lab6.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №6-7</p>
+        </div>
+      </a>
+
+      <a href="../lab7/lab7.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №8-9</p>
+        </div>
+      </a>
+    </div>
+
+<div class="infocontent">
+<div class="buttoncont">
+    <a href="lab3.html"><div class="button1"><h3>Тема, мета ЛР№3 Місце розташування сайту, звіту</h3></div></a>
+    <a href="lab3.1.html"><div class="button1"><h3>ЗАВДАННЯ №1 Зовнішній вигляд макету. Код макету</h3></div></a>
+    
+    <a href="lab3.2.html"><div class="button1"><h3>ЗАВДАННЯ №2</h3></div></a>
+
+    <a href="lab3.3.html"><div class="buttonactive2"><h3>Фіксована таблична верстка</h3></div></a>
+    <a href="lab3.4.html"><div class="button2"><h3>Гумова таблична верстка</h3></div></a>
+    <a href="lab3.5.html"><div class="button2"><h3>Фіксована блокова верстка</h3></div></a>
+    <a href="lab3.6.html"><div class="button2"><h3>Гумова блокова верстка</h3></div></a>
+
+    <a href="lab3.7.html"><div class="button1"><h3>ЗАВДАННЯ №3 FLEXBOX</h3></div></a>
+    <a href="lab3.8.html"><div class="button2"><h3>Скріншот сторінки(FLEXBOX)</h3></div></a>
+    <a href="lab3.9.html"><div class="button2"><h3>HTML(Flexbox)</h3></div></a>
+    <a href="lab3.10.html"><div class="button2"><h3>CSS(Flexbox)</h3></div></a>
+    <a href="lab3.11.html"><div class="button1"><h3>Висновки</h3></div></a>
+</div>
+<div class="infocont">
+    <div class="info">
+      <h4>Зовнішній вигляд</h4>
+      <img class="fotosait" src="../image/lab3.1.png" alt="">
+      <p>Код:</p>
+      <code><pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+            &lt;head&gt;
+                &lt;style&gt;
+                    table {
+                        width: 100%;
+                    }
+        
+                    .header-table {
+                        float: none;
+                        width: 1450px;
+                        height: 100px;
+                        background-color: yellow;
+                        border: 1px;
+                        border-style: dashed;
+                        border-color: black;
+                    }
+                    .main-table {
+                        width: 300px;
+                        height: 580px;
+                        background-color: blue;
+                        border: 1px;
+                        border-style: dashed;
+                        border-color: black;
+                    }
+                    .red-table {
+                        background-color: red;
+                        margin: 10px;
+                        width: 1140px;
+                        height: 100px;
+                        border: 1px;
+                        border-style: dashed;
+                        border-color: black;
+                    }
+                    .white-table {
+                        height: 450px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        background-color: white;
+                        border: 1px;
+                        border-style: dashed;
+                        border-color: black;
+                    }
+                    .blue-table {
+                        margin-bottom: 10px;
+                        height: 450px;
+                        background-color: blue;
+                        border: 1px;
+                        border-style: dashed;
+                        border-color: black;
+                    }
+                    .footer-table {
+                        width: 1450px;
+                        height: 100px;
+                        background-color: yellow;
+                        border: 1px;
+                        border-style: dashed;
+                        border-color: black;
+                    }
+                    .white-rectangle {
+                        margin: 10px;
+                        background-color: white;
+                        width: 200px;
+                        height: 50px;
+                        border: 1px;
+                        border-style: dashed;
+                        border-color: black;
+                    }
+                    .hhhhhh {
+                        display: flex;
+                    }
+                    .jjjjj {
+                        width: 1150px;
+                    }
+                    .kkkk {
+                        width: 1150px;
+                        display: flex;
+                    }
+                &lt;/style&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;header&gt;
+                    &lt;table class="header-table"&gt;
+                        &lt;tr&gt;
+                            &lt;td style="background-color: yellow"&gt;
+                                &lt;div class="white-rectangle"&gt;&lt;/div&gt;
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                &lt;/header&gt;
+                &lt;main&gt;
+                    &lt;div class="hhhhhh"&gt;
+                        &lt;table class="main-table"&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;1&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/table&gt;
+                        &lt;div class="jjjjj"&gt;
+                            &lt;table class="red-table"&gt;
+                                &lt;tr&gt;
+                                    &lt;td&gt;&lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/table&gt;
+                            &lt;div class="kkkk"&gt;
+                                &lt;table class="white-table"&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;3&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                &lt;/table&gt;
+                                &lt;table class="blue-table"&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;4&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                &lt;/table&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/main&gt;
+            &lt;/body&gt;
+            &lt;footer&gt;
+                &lt;table class="footer-table"&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;5&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+            &lt;/footer&gt;
+        &lt;/html&gt;
+         
+      </pre></code>
+    
+    
+    </div>
+</div>
+</div>
+   
+    
+   
+    
+    
+    
+  
+    
+    
+      
+      
+    </main>
+  <footer>
+    <p>&copy; 2024 Всі права захищені.</p>
+  </footer>
+</body>
+</html>

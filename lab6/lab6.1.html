@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Звіт з лабораторних робіт</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div>
+          <h1 class="text1">Звіти з лабораторних робіт</h1>
+          <h2 class="text1">З дисципліни "Програмування інтернет-застосуввань"</h2>
+        </div>
+        <div class="head2">
+            <div class="space">
+          <div class="student">
+            <h2>Студент: Вашкулат Денис Олександрович</h2>
+            <h2>Група: ІПЗ-21-301</h2>
+          </div>
+          <div class="fotoblock">
+            <img src="../image/foto (2).jpg" alt="" class="foto">
+        </div>
+          </div>
+        </div>
+      </header>
+      
+  <main>
+    <div class="blocklab">
+      <a href="../lab1/lab1.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №1</p>
+        </div>
+      </a>
+      <a href="../lab2/lab2.html"
+        ><div class="lab-report">
+          <p>Лабораторна робота №2</p>
+        </div>
+      </a>
+
+      <a href="../lab3/lab3.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №3</p>
+        </div>
+      </a>
+
+      <a href="../lab4/lab4.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №4</p>
+        </div>
+      </a>
+
+      <a href="../lab5/lab5.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №5</p>
+        </div>
+      </a>
+
+      <a href="lab6/lab6.html">
+        <div class="lab-reportactive">
+          <p>Лабораторна робота №6-7</p>
+        </div>
+      </a>
+
+      <a href="../lab7/lab7.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №8-9</p>
+        </div>
+      </a>
+    </div>
+
+<div class="infocontent">
+<div class="buttoncont">
+    <a href="lab6.html"><div class="button1"><h3>ПОСТАНОВКА ЗАДАЧІ Лабораторної №6-7</h3></div></a>
+    <a href="lab6.1.html"><div class="buttonactive"><h3>Способи застосування об&#39;єктів.</h3></div></a>
+    <a href="lab6.2.html"><div class="button1"><h3>Завдання</h3></div></a>
+    <a href="lab6.3.html"><div class="button1"><h3>Висновок</h3></div></a>
+ 
+</div>
+<div class="infocont">
+    <div class="info">
+      <h4>Застосування об&#39;єктів.</h4>
+    <p>Об'єкти в JavaScript є одними з основних структурних елементів мови, які дозволяють організувати та зберігати дані у вигляді пар ключ-значення. Вони використовуються для різних цілей і мають ряд способів застосування:</p> 
+    <p>1. Зберігання та організація даних: Об'єкти дозволяють структурувати дані у вигляді властивостей (або полів), кожна з яких має унікальний ключ.</p>
+    <p>Наприклад:</p>
+    <code><pre>
+        let person = {
+            name: 'John',
+            age: 30,
+            address: {
+                city: 'New York',
+                country: 'USA'
+            }
+        };
+          
+    </pre></code>
+    <p>2. Представлення реальних об'єктів: Об'єкти можуть бути використані для моделювання реальних об'єктів або сутностей, що мають характеристики та поведінку.</p>
+    <p>Наприклад:</p>
+    <code><pre>
+        // Моделювання автомобіля
+        let car = {
+            brand: 'Toyota',
+            model: 'Corolla',
+            year: 2020,
+            start: function() {
+                console.log('Двигун запущено');
+            },
+            stop: function() {
+                console.log('Двигун зупинено');
+            }
+        };
+        
+        // Виклик методів об'єкта
+        car.start();
+        car.stop(); 
+    </pre></code>
+    <p>3. Моделювання комплексних даних: Об'єкти дозволяють створювати складні структури даних, які можуть включати інші об'єкти, масиви, функції та інші дані. Це забезпечує гнучкість та ефективне управління даними.</p>
+    <p>Наприклад:</p>
+    <code><pre>
+        let student = {
+            name: 'Alice',
+            age: 25,
+            grades: [85, 90, 95],
+            address: {
+                city: 'London',
+                country: 'UK'
+            },
+            getAverageGrade: function() {
+                let sum = this.grades.reduce((total, grade) => total + grade, 0);
+                return sum / this.grades.length;
+            }
+        };
+        
+        console.log(student.getAverageGrade()); // Виведе середній бал студента
+        
+    </pre></code>
+    
+    </div>
+</div>
+</div>
+   
+    
+   
+    
+    
+    
+  
+    
+    
+      
+      
+    </main>
+  <footer>
+    <p>&copy; 2024 Всі права захищені.</p>
+  </footer>
+</body>
+</html>

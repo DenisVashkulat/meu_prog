@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Звіт з лабораторних робіт</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div>
+          <h1 class="text1">Звіти з лабораторних робіт</h1>
+          <h2 class="text1">З дисципліни "Програмування інтернет-застосуввань"</h2>
+        </div>
+        <div class="head2">
+            <div class="space">
+          <div class="student">
+            <h2>Студент: Вашкулат Денис Олександрович</h2>
+            <h2>Група: ІПЗ-21-301</h2>
+          </div>
+          <div class="fotoblock">
+            <img src="../image/foto (2).jpg" alt="" class="foto">
+        </div>
+          </div>
+        </div>
+      </header>
+      
+  <main>
+    <div class="blocklab">
+      <a href="../lab1/lab1.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №1</p>
+        </div>
+      </a>
+      <a href="../lab2/lab2.html"
+        ><div class="lab-report">
+          <p>Лабораторна робота №2</p>
+        </div>
+      </a>
+
+      <a href="lab3/lab3.html">
+        <div class="lab-reportactive">
+          <p>Лабораторна робота №3</p>
+        </div>
+      </a>
+
+      <a href="../lab4/lab4.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №4</p>
+        </div>
+      </a>
+
+      <a href="../lab5/lab5.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №5</p>
+        </div>
+      </a>
+
+      <a href="../lab6/lab6.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №6-7</p>
+        </div>
+      </a>
+
+      <a href="../lab7/lab7.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №8-9</p>
+        </div>
+      </a>
+    </div>
+
+<div class="infocontent">
+<div class="buttoncont">
+    <a href="lab3.html"><div class="button1"><h3>Тема, мета ЛР№3 Місце розташування сайту, звіту</h3></div></a>
+    <a href="lab3.1.html"><div class="button1"><h3>ЗАВДАННЯ №1 Зовнішній вигляд макету. Код макету</h3></div></a>
+    
+    <a href="lab3.2.html"><div class="button1"><h3>ЗАВДАННЯ №2</h3></div></a>
+
+    <a href="lab3.3.html"><div class="button2"><h3>Фіксована таблична верстка</h3></div></a>
+    <a href="lab3.4.html"><div class="button2"><h3>Гумова таблична верстка</h3></div></a>
+    <a href="lab3.5.html"><div class="button2"><h3>Фіксована блокова верстка</h3></div></a>
+    <a href="lab3.6.html"><div class="buttonactive2"><h3>Гумова блокова верстка</h3></div></a>
+
+    <a href="lab3.7.html"><div class="button1"><h3>ЗАВДАННЯ №3 FLEXBOX</h3></div></a>
+    <a href="lab3.8.html"><div class="button2"><h3>Скріншот сторінки(FLEXBOX)</h3></div></a>
+    <a href="lab3.9.html"><div class="button2"><h3>HTML(Flexbox)</h3></div></a>
+    <a href="lab3.10.html"><div class="button2"><h3>CSS(Flexbox)</h3></div></a>
+    <a href="lab3.11.html"><div class="button1"><h3>Висновки</h3></div></a>
+</div>
+<div class="infocont">
+    <div class="info">
+      <h4>Зовнішній вигляд</h4>
+      <img class="fotosait" src="../image/lab3.1.png" alt="">
+      <p>Код:</p>
+      <code><pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+            &lt;head&gt;
+                &lt;style&gt;
+                    body
+                    {
+                   
+                    }
+                    .header {
+                        width: 100%;
+                        height: 100px;
+                        background-color: yellow;
+                        border: 1px dashed black;
+                    }
+        
+                    .main {
+                        display: flex;
+                        height: 100%;
+                    }
+        
+                    .left {
+                        width: 25%;
+                        height: 80vh;
+                        background-color: blue;
+                        border: 1px dashed black;
+                    }
+        
+                    .red {
+                        margin: 10px;
+                        background-color: red;
+                        height: 100px;
+                        width: 99%;
+                        border: 1px dashed black;
+                    }
+        
+                    .middle {
+                        margin: 10px;
+                        width: 50%;
+                        height: 66vh;
+                        background-color: white;
+                        border: 1px dashed black;
+                    }
+        
+                    .right {
+                        margin: 10px;
+                        width: 50%;
+                        background-color: blue;
+                        border: 1px dashed black;
+                    }
+        
+                    .footer {
+                        width: 100%;
+                        height: 100px;
+                        background-color: yellow;
+                        border: 1px dashed black;
+                    }
+        
+                    .white-rectangle {
+                        margin: 10px;
+                        background-color: white;
+                        width: 200px;
+                        height: 50px;
+                        border: 1px dashed black;
+                    }
+        
+                    .content
+                    {
+                        display: flex;
+                    }
+        
+                    .content2
+                    {
+                       height: 100%;
+                       width: 90%;
+                    }
+                &lt;/style&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;header class="header"&gt;
+                    &lt;div class="white-rectangle"&gt;&lt;/div&gt;
+                &lt;/header&gt;
+                &lt;main class="main"&gt;
+                    
+                    &lt;div class="left"&gt;
+                        1
+                    &lt;/div&gt;
+                    &lt;div class="content2"&gt;
+                        &lt;div class="red"&gt;&lt;/div&gt;
+                        &lt;div class="content"&gt;
+                            &lt;div class="middle"&gt;
+                                3
+                            &lt;/div&gt;
+                            &lt;div class="right"&gt;
+                                4
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/main&gt;
+                &lt;footer class="footer"&gt;
+                    5
+                &lt;/footer&gt;
+            &lt;/body&gt;
+        &lt;/html&gt;
+        
+      </pre></code>
+    
+    
+    </div>
+</div>
+</div>
+   
+    
+   
+    
+    
+    
+  
+    
+    
+      
+      
+    </main>
+  <footer>
+    <p>&copy; 2024 Всі права захищені.</p>
+  </footer>
+</body>
+</html>

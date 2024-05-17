@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Звіт з лабораторних робіт</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div>
+          <h1 class="text1">Звіти з лабораторних робіт</h1>
+          <h2 class="text1">З дисципліни "Програмування інтернет-застосуввань"</h2>
+        </div>
+        <div class="head2">
+            <div class="space">
+          <div class="student">
+            <h2>Студент: Вашкулат Денис Олександрович</h2>
+            <h2>Група: ІПЗ-21-301</h2>
+          </div>
+          <div class="fotoblock">
+            <img src="../image/foto (2).jpg" alt="" class="foto">
+        </div>
+          </div>
+        </div>
+      </header>
+      
+  <main>
+    <div class="blocklab">
+      <a href="../lab1/lab1.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №1</p>
+        </div>
+      </a>
+      <a href="../lab2/lab2.html"
+        ><div class="lab-report">
+          <p>Лабораторна робота №2</p>
+        </div>
+      </a>
+
+      <a href="../lab3/lab3.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №3</p>
+        </div>
+      </a>
+
+      <a href="../lab4/lab4.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №4</p>
+        </div>
+      </a>
+
+      <a href="lab5/lab5.html">
+        <div class="lab-reportactive">
+          <p>Лабораторна робота №5</p>
+        </div>
+      </a>
+
+      <a href="../lab6/lab6.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №6-7</p>
+        </div>
+      </a>
+
+      <a href="../lab7/lab7.html">
+        <div class="lab-report">
+          <p>Лабораторна робота №8-9</p>
+        </div>
+      </a>
+    </div>
+
+<div class="infocontent">
+<div class="buttoncont">
+    <a href="lab5.html"><div class="button1"><h3>ПОСТАНОВКА ЗАДАЧІ Лабораторної №5</h3></div></a>
+    <a href="lab5.1.html"><div class="button1"><h3>Способи функцінувального застосування JavaScript</h3></div></a>
+    
+    <a href="lab5.2.html"><div class="button2"><h3>Схема URL</h3></div></a>
+    <a href="lab5.3.html"><div class="button2"><h3>Обробник подій</h3></div></a>
+    <a href="lab5.4.html"><div class="button2"><h3>Підстановка(entity)</h3></div></a>
+    <a href="lab5.5.html"><div class="button2"><h3>Вставка(тег SCRIPT)</h3></div></a>
+    
+    <a href="lab5.6.html"><div class="button1"><h3>МАСИВИ</h3></div></a>
+    <a href="lab5.7.html"><div class="buttonactive"><h3>Динамічне меню</h3></div></a>
+    <a href="lab5.8.html"><div class="button1"><h3>Висновки</h3></div></a>
+</div>
+<div class="infocont">
+    <div class="info">
+      <h3>Завдання:</h3>
+      <p>Динамічне меню</p>
+      <p>Сформувати багаторівневе меню (горизонтальне та
+        вертикальне), пункти меню взяти із статичного
+        масиву. При натисканні на визначений пункт меню
+        має завантажуватися відповідна HTML-сторінка.
+        Меню має бути присутнім на всіх сторінках.
+      </p>
+      <h3>Виконання коду:</h3>
+      <img class="fotosait" src="../image/lab5.3.png">
+      <img class="fotosait" src="../image/lab5.4.png">
+      <img class="fotosait" src="../image/lab5.5.png">
+      <h3>Код:</h3>
+      <code><pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Меню&lt;/title&gt;
+            &lt;style&gt;
+                /* Стилі для горизонтального меню */
+                .horizontal-menu {
+                    width: 350px;
+                    height: 30px;
+                    display: flex;
+                    list-style-type: none;
+                    background-color: #f4f4f4;
+                    padding: 10px;
+                    margin: 0;
+                }
+                .horizontal-menu li {
+                    margin-right: 20px;
+                }
+                .horizontal-menu li:last-child {
+                    margin-right: 0;
+                }
+        
+                /* Стилі для вертикального меню */
+                .vertical-menu {
+                    width: 100px;
+                    height: 90px;
+                    display: flex;
+                    flex-direction: column;
+                    list-style-type: none;
+                    background-color: #f4f4f4;
+                    padding: 10px;
+                    margin: 0;
+                }
+                .vertical-menu li {
+                    margin-bottom: 20px;
+                }
+                .vertical-menu li:last-child {
+                    margin-bottom: 0;
+                }
+        
+                /* Загальні стилі для меню */
+                .menu-link {
+                    text-decoration: none;
+                    color: #333;
+                    transition: color 0.3s;
+                }
+                .menu-link:hover {
+                    color: rgb(0, 68, 255);
+                }
+                header{
+                    display: flex;
+                    justify-content: center;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;header&gt;&lt;h1&gt;Це перша сторінка&lt;/h1&gt;&lt;/header&gt;
+        
+            <!-- Горизонтальне меню -->
+            &lt;ul class="horizontal-menu"&gt;
+                &lt;li&gt;&lt;a class="menu-link" href="home.html"&gt;Пункт меню 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class="menu-link" href="page2.html"&gt;Пункт меню 2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class="menu-link" href="page3.html"&gt;Пункт меню 3&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        
+            <!-- Вертикальне меню -->
+            &lt;ul class="vertical-menu"&gt;
+                &lt;li&gt;&lt;a class="menu-link" href="home.html"&gt;Пункт меню 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class="menu-link" href="page2.html"&gt;Пункт меню 2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class="menu-link" href="page3.html"&gt;Пункт меню 3&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        
+            &lt;script&gt;
+                // Отримання всіх посилань меню
+                var menuLinks = document.querySelectorAll('.menu-link');
+        
+                // Додавання обробника подій для кожного посилання
+                menuLinks.forEach(function(link) {
+                    link.addEventListener('click', function(event) {
+                        // Відміна стандартної дії посилання
+                        event.preventDefault();
+        
+                        // Отримання URL посилання
+                        var url = this.getAttribute('href');
+        
+                        // Перехід на відповідну сторінку
+                        window.location.href = url;
+                    });
+                });
+            &lt;/script&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+        
+      </pre></code>
+      
+    </div>
+</div>
+</div>
+   
+    
+   
+    
+    
+    
+  
+    
+    
+      
+      
+    </main>
+  <footer>
+    <p>&copy; 2024 Всі права захищені.</p>
+  </footer>
+</body>
+</html>
